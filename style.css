@@ -118,9 +118,21 @@ nav {
   .nav-links {
     position: absolute;
     right: 0%;
-    height: 92vh;
-    top: 250px;
-    background: #c0c0c0;
+    height: 100%;
+    z-index: 1000;
+    top: 20%;
+    background: linear-gradient(
+      to left,
+      #ff66ff,
+      #ccffff,
+      #ffcccc,
+      #ffcc99,
+      #ffff99
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: content-box;
+    animation: animate 30s linear infinite;
+    background-size: 1000%;
     display: flex;
     flex-direction: column;
     align-items: center;
